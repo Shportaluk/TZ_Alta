@@ -31,9 +31,18 @@ public class Bullet : BasePoolElement
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider collider)
     {
-        onTriggerEnter?.Invoke(this, other);
+        if (collider.TryGetComponent(out IInfectible infectible))
+        {
+            if(infectible.IsInfected == false)
+            {
+                float power = transform.localScale.x;
+                infectible.Infect(power);
+            }
+        }
+        onTriggerEnter?.Invoke(this, collider);
+        Destroy();
     }
 
     public void Destroy()

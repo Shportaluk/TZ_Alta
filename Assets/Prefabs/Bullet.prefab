@@ -122,4 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 10
-  _distanceCoefficientToInfection: 1.2
+  _distanceCoefficientToInfection: 1.5
