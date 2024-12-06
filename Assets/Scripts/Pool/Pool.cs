@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 [Serializable]
-public class Pool<TItem> : MonoBehaviour
+public class Pool<TItem>
     where TItem : MonoBehaviour, IPoolElement
 {
     public event Action<TItem> onInstantiated;
