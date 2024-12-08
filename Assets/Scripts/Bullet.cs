@@ -8,12 +8,14 @@ public class Bullet : BasePoolElement
     public float DistanceToInfection => transform.localScale.x * _distanceCoefficientToInfection;
 
     [SerializeField] private float _speed;
+    [SerializeField] private float _duration = 3;
     [SerializeField] private float _distanceCoefficientToInfection = 1.2f;
-
+    private float _currentTime = 0f;
 
     public override void SetUse()
     {
         base.SetUse();
+        _currentTime = 0f;
         gameObject.SetActive(true);
     }
 
@@ -27,6 +29,13 @@ public class Bullet : BasePoolElement
     {
         if(IsUsing)
         {
+            _currentTime += Time.fixedDeltaTime;
+            if(_currentTime >= _duration)
+            {
+                SetUnUse();
+                return;
+            }
+
             transform.position += transform.forward * _speed * Time.fixedDeltaTime;
         }
     }
