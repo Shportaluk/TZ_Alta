@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    public event Action onScale;
+
     private Func<Bullet> _funcGetBullet;
 
     [SerializeField] private float _bulletSizeStep = 0.01f;
@@ -26,6 +28,7 @@ public class Player : MonoBehaviour
                 throw new Exception();
             }
             _bulletSize += _bulletSizeStep;
+            onScale?.Invoke();
         }
     }
 

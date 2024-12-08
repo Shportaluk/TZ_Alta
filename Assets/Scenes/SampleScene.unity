@@ -3144,6 +3144,7 @@ GameObject:
   - component: {fileID: 933921460}
   - component: {fileID: 933921459}
   - component: {fileID: 933921458}
+  - component: {fileID: 933921461}
   m_Layer: 0
   m_Name: Road
   m_TagString: Untagged
@@ -3219,6 +3220,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &933921461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933921457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08bef3bc60c4d493fb1514fd4c939791, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _player: {fileID: 3049573750259341804}
 --- !u!1001 &946570328
 PrefabInstance:
   m_ObjectHideFlags: 0
