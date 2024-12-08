@@ -5,10 +5,16 @@ public class Player : MonoBehaviour
 {
     public event Action onScale;
 
-    private Func<Bullet> _funcGetBullet;
+    public bool IsGrounded => _groundTrigger.IsExistAnyThinkAtTrigger;
+    public float Scale => transform.localScale.x;
 
     [SerializeField] private float _bulletSizeStep = 0.01f;
     [SerializeField] private float _bulletSizeMultiplier = 10;
+    [SerializeField] private Rigidbody _rigidBody;
+    [SerializeField] private Vector3 _jumpForce;
+    [SerializeField] private GroundTrigger3D _groundTrigger;
+
+    private Func<Bullet> _funcGetBullet;
     private float _bulletSize = 0f;
     private bool _isStartedBulletPreparation = false;
 
@@ -16,6 +22,14 @@ public class Player : MonoBehaviour
     public void Init(Func<Bullet> funcGetBullet)
     {
         _funcGetBullet = funcGetBullet;
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyUp(KeyCode.Space))
+        {
+            Jump();
+        }
     }
 
     private void FixedUpdate()
@@ -38,8 +52,6 @@ public class Player : MonoBehaviour
         _bulletSize = 0f;
     }
 
-
-
     public void Fire()
     {
         _isStartedBulletPreparation = false;
@@ -48,5 +60,12 @@ public class Player : MonoBehaviour
         bullet.transform.rotation = this.transform.rotation;
 
         bullet.transform.localScale = Vector3.one * _bulletSize * _bulletSizeMultiplier;
+    }
+
+    public void Jump()
+    {
+        _rigidBody.linearVelocity = new Vector3(_rigidBody.linearVelocity.x, 0f, _rigidBody.linearVelocity.z);
+        var force = Vector3.Scale(new Vector3(transform.forward.x, 1, transform.forward.z), _jumpForce);
+        _rigidBody.AddForce(force, ForceMode.Impulse);
     }
 }
