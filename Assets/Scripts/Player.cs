@@ -29,10 +29,6 @@ public class Player : MonoBehaviour
         if(_isStartedBulletPreparation)
         {
             transform.localScale -= Vector3.one * _bulletSizeStep;
-            if (transform.localScale.x < 0.2f)
-            {
-                throw new Exception();
-            }
             _bulletSize += _bulletSizeStep;
             onScale?.Invoke();
         }
@@ -42,6 +38,11 @@ public class Player : MonoBehaviour
     {
         _isStartedBulletPreparation = true;
         _bulletSize = 0f;
+    }
+
+    public void EndBulletPreparation()
+    {
+        _isStartedBulletPreparation = false;
     }
 
     public void Fire()
