@@ -24,14 +24,6 @@ public class Player : MonoBehaviour
         _funcGetBullet = funcGetBullet;
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyUp(KeyCode.Space))
-        {
-            Jump();
-        }
-    }
-
     private void FixedUpdate()
     {
         if(_isStartedBulletPreparation)
