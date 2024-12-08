@@ -1,0 +1,17 @@
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/GAToUnityCallbacks.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroEnd.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroHeaderBegin.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/MacroSourceBegin.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAApplication.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAConfiguration.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGADebug.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAEvents.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAInput.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboard.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGASoftKeyboardCallbacks.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGATypes.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UGAVersion.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGACallbacks.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAConfigurationCallbacks.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAKeyEventCallbacks.h
+/Users/andrew/Projects/Unity/TZ_Alta/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/src/main/cpp/GameActivity/UnityToGAMotionEventCallbacks.h

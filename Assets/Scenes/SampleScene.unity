@@ -500,7 +500,7 @@ MonoBehaviour:
   - {fileID: 1869667058}
   - {fileID: 1651579182}
   _minDistanceToTarget: 5
-  _minScalePlayer: 0.2
+  _minScalePlayer: 0.38
   _delayToShowCompleteLevel: 1
   _ui: {fileID: 237742162}
 --- !u!4 &28070909
