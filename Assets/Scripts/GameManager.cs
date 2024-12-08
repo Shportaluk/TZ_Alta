@@ -15,7 +15,12 @@ public sealed class GameManager : MonoBehaviour
 
     private static void InitHandlers()
     {
-        InputHandler = new PCInputHandler();
+        InputHandler =
+#if UNITY_EDITOR
+            new PCInputHandler();
+#else
+            new MobileInputHandler();
+#endif
         _handlers.Add(InputHandler);
     }
 
