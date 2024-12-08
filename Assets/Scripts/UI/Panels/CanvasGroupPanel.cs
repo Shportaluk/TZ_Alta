@@ -15,7 +15,7 @@ public class CanvasGroupPanel : AbstractPanel
 
 	private void OnDestroy()
 	{
-		StopCoroutine(_coroutine);
+		TryStopCoroutine(_coroutine);
 	}
 
 	public override void Show()

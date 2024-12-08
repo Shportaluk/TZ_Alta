@@ -400,6 +400,8 @@ MonoBehaviour:
   _target: {fileID: 1681961130936767783}
   _poolBullets:
     _prefab: {fileID: 8554488882790154527, guid: 3f576db978ed3461b83140a9afbe734b, type: 3}
+  _poolExplotions:
+    _prefab: {fileID: 8094712101933774978, guid: 1e6762ae95b0a4b1e9cfb8654d756778, type: 3}
   _obstacles:
   - {fileID: 5629554757436751427}
   - {fileID: 1065718935}

@@ -7,6 +7,7 @@ public class LevelController : MonoBehaviour
     [SerializeField] private Player _player;
     [SerializeField] private Target _target;
     [SerializeField] private Pool<Bullet> _poolBullets;
+    [SerializeField] private Pool<ExplotionEffect> _poolExplotions;
     [SerializeField] private List<Obstacle> _obstacles;
     [SerializeField] private float _minDistanceToTarget = 5f;
     [SerializeField] private float _minScalePlayer = 0.15f;
@@ -51,6 +52,9 @@ public class LevelController : MonoBehaviour
 
     private void OnDestroyedObstacle(Obstacle obj)
     {
+        var explotion = _poolExplotions.Get();
+        explotion.transform.position = obj.transform.position;
+
         if (_isLevelEnded == false &&
             _isStartedMoveToTarget == false &&
             IsExistObstaclesToTarget() == false)
