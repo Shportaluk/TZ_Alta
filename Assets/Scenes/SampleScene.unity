@@ -397,7 +397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 3049573750259341804}
-  _target: {fileID: 480288798}
+  _target: {fileID: 1681961130936767783}
   _poolBullets:
     _prefab: {fileID: 8554488882790154527, guid: 3f576db978ed3461b83140a9afbe734b, type: 3}
   _obstacles:
@@ -499,6 +499,7 @@ MonoBehaviour:
   - {fileID: 1263506734}
   - {fileID: 1869667058}
   - {fileID: 1651579182}
+  _minDistanceToTarget: 5
 --- !u!4 &28070909
 Transform:
   m_ObjectHideFlags: 0
@@ -2383,11 +2384,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6513673877575090259, guid: 1b6ef686a27f94eedbd9c9d7e7f37a8d, type: 3}
   m_PrefabInstance: {fileID: 458390873}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &480288798 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2318441744270805629, guid: 4c9bd83831efa43e2878b9389bdfca55, type: 3}
-  m_PrefabInstance: {fileID: 1681961130936767782}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &490565073
 PrefabInstance:
@@ -8238,6 +8234,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c9bd83831efa43e2878b9389bdfca55, type: 3}
+--- !u!114 &1681961130936767783 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8826304521587805322, guid: 4c9bd83831efa43e2878b9389bdfca55, type: 3}
+  m_PrefabInstance: {fileID: 1681961130936767782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de9dcf0c2bbbb4c359d3b68f4f6d4bdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3049573750259341803
 PrefabInstance:
   m_ObjectHideFlags: 0

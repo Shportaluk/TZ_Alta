@@ -4,7 +4,7 @@ using UnityEngine;
 public class LevelController : MonoBehaviour
 {
     [SerializeField] private Player _player;
-    [SerializeField] private Transform _target;
+    [SerializeField] private Target _target;
     [SerializeField] private Pool<Bullet> _poolBullets;
     [SerializeField] private List<Obstacle> _obstacles;
     [SerializeField] private float _minDistanceToTarget = 5f;
@@ -35,7 +35,7 @@ public class LevelController : MonoBehaviour
             new PlayerJumpToTargetDriver(
                 this.StartCoroutine,
                 _player,
-                _target,
+                _target.transform,
                 _minDistanceToTarget,
                 OnPlayerNearTarget)
             .Run();
@@ -44,12 +44,12 @@ public class LevelController : MonoBehaviour
 
     private void OnPlayerNearTarget()
     {
-
+        _target.OpenDoor();
     }
 
     private bool IsExistObstaclesToTarget()
     {
-        return PhysicUtility.Check(_player.transform.position, _target.position, _player.Scale, _obstacleLayerMask, out RaycastHit[] hits);
+        return PhysicUtility.Check(_player.transform.position, _target.transform.position, _player.Scale, _obstacleLayerMask, out RaycastHit[] hits);
     }
 
     public IReadOnlyList<Obstacle> GetObstacles()
